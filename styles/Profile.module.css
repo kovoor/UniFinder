@@ -1,0 +1,22 @@
+
+
+.profilePage {
+  margin: 30px;
+}
+
+.searchForm {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  position: relative;
+  padding-left: 5px;
+  top: 12.5px
+}

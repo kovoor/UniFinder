@@ -1,0 +1,61 @@
+// {
+//     "root": true,
+//     "parser": "babel-eslint",
+//     "extends": [
+//         "eslint:recommended",
+//         "plugin:react/recommended",
+//         "plugin:import/errors",
+//         "plugin:import/warnings",
+//         "plugin:jsx-a11y/recommended",
+//         "plugin:react-hooks/recommended",
+//         "airbnb"
+//     ],
+//     "env": {
+//         "browser": true,
+//         "commonjs": true,
+//         "es2020": true,
+//         "node": true
+//     },
+//     "globals": {
+//         "process": true
+//     },
+//     "parserOptions": {
+//         "ecmaVersion": 11,
+//         "sourceType": "module",
+//         "ecmaFeatures": {
+//             "jsx": true
+//         }
+//     },
+//     "settings": {
+//         "react": {
+//             "version": "detect"
+//         }
+//     },
+//     "rules": {
+//         "linebreak-style": [
+//             "error",
+//             "windows"
+//         ],
+//         "semi": [
+//             "error",
+//             "never"
+//         ],
+//         "no-trailing-spaces": "error",
+//         "jsx-a11y/click-events-have-key-events": 0,
+//         "react/prop-types": 0,
+//         "react/jsx-props-no-spreading": 0,
+//         "react/jsx-uses-vars": [
+//             2
+//         ],
+//         "import/prefer-default-export": 0,
+//         "react/jsx-no-undef": "error",
+//         "no-param-reassign": 0,
+//         "no-nested-ternary": 0,
+//         "no-console": 0,
+//         "react/jsx-filename-extension": [
+//             0
+//         ],
+//         "jsx-a11y/label-has-for": 0,
+//         "jsx-a11y/label-has-associated-control": 0
+//     }
+// }

@@ -1,0 +1,243 @@
+.searchPage {
+  margin: 30px;
+}
+
+.searchParams {
+  font-size: 28px;
+}
+.searchParams span {
+  font-weight: bold;
+}
+
+
+
+.searchForm {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  position: relative;
+  padding-left: 5px;
+  top: 12.5px
+}
+
+.container {
+  top: 60px;
+  left: calc(50% - 300px);
+  display: inline;
+}
+
+.card {
+  /* display: flex; */
+  height: 240px;
+  width: 55%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0.2rem 0.4rem 1rem rgb(226, 226, 226);
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: -40px;
+  padding-left: 20px;
+  font-size: 14px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.defaultImage {
+   max-width: 100%;
+    height: 80%;
+    display: inline-block;
+    width: 37%;
+    margin-top: 15px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.cardInfo {
+  display: block;
+  margin-left: 40%;
+  position: relative;
+  color: #737373;
+  font-size: 15px;
+}
+
+.totalPrice {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 65%;
+  color: black;
+  top: -40px;
+}
+
+@media (min-width: 500px) and (max-width: 1400px) {
+  .defaultImage {
+    display:none;  
+  }
+
+  .cardInfo {
+    margin: 0
+  }
+
+  .totalPrice {
+    margin-left: 75%;
+  }
+
+  .searchParams {
+  font-size: 22px;
+}
+}
+
+.title {
+  color: black;
+  font-weight: 700;
+  /* position: absolute; */
+  left: 20px;
+  overflow: hidden;
+  /* top: 15px; */
+  /*code for cards source: https://codepen.io/william-goldsworthy/pen/JzVajj*/
+}
+
+.searchPage hr {
+  border: none;
+  height: 1px;
+  color: rgb(187, 187, 187); /* old IE */
+  background-color: rgb(226, 225, 225); /* Modern Browsers */
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  margin: 250px auto;
+  background-color: #53AFFF;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.filters {
+    cursor: pointer !important;
+    text-align: center !important;
+    border: 1px solid black !important;
+    background-color: #FFFFFF !important;
+    outline: none !important;
+    padding: 0px !important;
+    border-color: #B0B0B0 !important;
+    border-radius: 30px !important;
+    color: #222222 !important;
+    position: relative !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 16px !important;
+    margin-right: 10px;
+}
+
+.filters:active {
+    overflow: hidden !important;
+    pointer-events: none !important;
+    background-color: #F7F7F7 !important;
+    color: #222222 !important;
+    border-color: #222222 !important;
+}
+
+.paginateWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0.2rem;
+  font-weight: 600;
+  cursor: pointer !important;
+}
+
+.paginateA, .paginateNextA, .paginatePrevA, .paginateBreakA {
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
+
+.paginateLi {
+    margin: 0 0.2rem;
+}
+
+.paginateNextA, .paginatePrevA {
+  margin: 0 0.3rem;
+}
+
+.paginateActive {
+    color: white;
+    border-radius: 50%;
+    padding: 7px 6px;
+    background: black;
+}
+
+.paginate-disabled > a {
+    cursor: not-allowed;
+    background: transparent;
+    color: #666;
+}
+
+.prevButton:active [type="button"] {
+  outline: none;
+  border:none;
+}
+
+.nextButton:active [type="button"] {
+  outline: none;
+  border:none;
+}

@@ -1,0 +1,21 @@
+.searchForm input {
+    font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    border:0;
+    border-radius: 10px;
+    padding:10px;
+    margin:1px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.searchForm input[type=submit] {
+    background-color: #53AFFF;
+    font-weight: bold;
+    color: white
+}
+
+
+
+
+
+
