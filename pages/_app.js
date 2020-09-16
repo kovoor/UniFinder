@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import React from 'react'
 import UniProvider from '../contexts/UniContext'
-import Profile from './profile/[...id]'
 
 function MyApp({ Component, pageProps }) {
 
