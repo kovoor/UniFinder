@@ -10,16 +10,42 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/react-ssr": "^4.0.0",
+    "@chakra-ui/react": "^1.0.3",
+    "@emotion/react": "^11.1.2",
+    "@emotion/styled": "^11.0.0",
+    "@react-aria/slider": "^3.0.0",
+    "@tryghost/content-api": "^1.4.11",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "apollo-server-micro": "^2.19.0",
     "axios": "^0.19.2",
-    "csv-parser": "^2.3.3",
+    "csv-parser": "^2.3.5",
     "dotenv": "^8.2.0",
-    "mongoose": "^5.10.3",
+    "formik": "^2.2.6",
+    "framer-motion": "^3.0.0",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "graphql-tools": "^7.0.2",
+    "mongoose": "^5.11.8",
     "multer": "^1.4.2",
     "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-paginate": "^6.3.2",
-    "swr": "^0.3.2"
+    "react-icons": "^4.1.0",
+    "react-map-gl": "^5.2.11",
+    "react-modal": "^3.12.1",
+    "react-paginate": "^6.5.0",
+    "react-range": "^1.8.7",
+    "react-slider": "^1.1.2",
+    "slug": "^3.5.2",
+    "swr": "^0.3.9"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "@types/react": "^16.14.2",
+    "typescript": "^4.1.3"
+  }
 }

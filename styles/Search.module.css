@@ -9,14 +9,12 @@
   font-weight: bold;
 }
 
-
-
-.searchForm {
+/* .searchForm {
   display: inline-block;
   justify-content: center;
   align-items: center;
   margin-left: 15%;
-}
+} */
 
 .logo {
   display: inline-block;
@@ -25,7 +23,7 @@
 .logo img {
   position: relative;
   padding-left: 5px;
-  top: 12.5px
+  top: 12.5px;
 }
 
 .container {
@@ -41,7 +39,7 @@
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0.2rem 0.4rem 1rem rgb(226, 226, 226);
-/*   margin-left: -50px; */
+  /*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: -40px;
@@ -50,12 +48,12 @@
   padding-top: 10px;
   cursor: pointer;
 }
-
+/* 
 @media (min-width: 500px) and (max-width: 1200px) {
   .card {
     width: 100%;
   }
-}
+} */
 
 .card:hover {
   transform: translateY(-3px);
@@ -69,13 +67,13 @@
 }
 
 .defaultImage {
-   max-width: 100%;
-    height: 80%;
-    display: inline-block;
-    width: 37%;
-    margin-top: 15px;
-    border-radius: 10px;
-    position: absolute;
+  max-width: 100%;
+  height: 80%;
+  display: inline-block;
+  width: 37%;
+  margin-top: 15px;
+  border-radius: 10px;
+  position: absolute;
 }
 
 .cardInfo {
@@ -95,23 +93,27 @@
   top: -40px;
 }
 
-@media (min-width: 500px) and (max-width: 1400px) {
+/* @media (min-width: 500px) and (max-width: 1400px) {
   .defaultImage {
-    display:none;  
+    display: none;
   }
 
   .cardInfo {
-    margin: 0
+    margin: 0;
   }
 
   .totalPrice {
-    margin-left: 75%;
+    margin-left: 67%;
   }
 
   .searchParams {
-  font-size: 22px;
-}
-}
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 100%;
+  }
+} */
 
 .title {
   color: black;
@@ -134,61 +136,34 @@
   width: 80px;
   height: 80px;
   margin: 250px auto;
-  background-color: #53AFFF;
+  background-color: #53afff;
 
-  border-radius: 100%;  
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
 }
 
-@-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
+/* @-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
   100% {
-    -webkit-transform: scale(1.0);
+    -webkit-transform: scale(1);
     opacity: 0;
   }
-}
+} */
 
-@keyframes sk-scaleout {
-  0% { 
+/* @keyframes sk-scaleout {
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
-}
-
-.filters {
-    cursor: pointer !important;
-    text-align: center !important;
-    border: 1px solid black !important;
-    background-color: #FFFFFF !important;
-    outline: none !important;
-    padding: 0px !important;
-    border-color: #B0B0B0 !important;
-    border-radius: 30px !important;
-    color: #222222 !important;
-    position: relative !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    font-size: 16px;
-    font-family: inherit;
-    font-weight: 400;
-    line-height: 16px !important;
-    margin-right: 10px;
-}
-
-.filters:active {
-    overflow: hidden !important;
-    pointer-events: none !important;
-    background-color: #F7F7F7 !important;
-    color: #222222 !important;
-    border-color: #222222 !important;
-}
+} */
 
 .paginateWrap {
   display: flex;
@@ -206,38 +181,56 @@
   cursor: pointer !important;
 }
 
-.paginateA, .paginateNextA, .paginatePrevA, .paginateBreakA {
+.paginateA,
+.paginateNextA,
+.paginatePrevA,
+.paginateBreakA {
   cursor: pointer;
   padding: 0.2rem 0.4rem;
 }
 
 .paginateLi {
-    margin: 0 0.2rem;
+  margin: 0 0.2rem;
 }
 
-.paginateNextA, .paginatePrevA {
+.paginateNextA,
+.paginatePrevA {
   margin: 0 0.3rem;
 }
 
 .paginateActive {
-    color: white;
-    border-radius: 50%;
-    padding: 7px 6px;
-    background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 7px 8px;
+  background: black;
 }
 
 .paginate-disabled > a {
-    cursor: not-allowed;
-    background: transparent;
-    color: #666;
+  cursor: not-allowed;
+  background: transparent;
+  color: #666;
 }
 
 .prevButton:active [type="button"] {
   outline: none;
-  border:none;
+  border: none;
 }
 
 .nextButton:active [type="button"] {
   outline: none;
-  border:none;
+  border: none;
+}
+
+.map {
+  top: 0;
+  align-self: flex-start;
+  display: none;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+}
+
+@media only screen and (min-width: 768px) {
+  .map {
+    display: none;
+  }
 }

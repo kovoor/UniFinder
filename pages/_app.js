@@ -1,14 +1,18 @@
-import '../styles/globals.css'
-import React from 'react'
-import UniProvider from '../contexts/UniContext'
+import "../styles/globals.css";
+import React from "react";
+import { ApolloProvider } from '@apollo/client'
+import { useApollo } from '../apollo/client'
+import { ChakraProvider, CSSReset, ColorModeProvider } from "@chakra-ui/react";
+import theme from "../styles/theme";
 
-function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
+  const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (
-    <UniProvider>
-      <Component {...pageProps} />
-    </UniProvider>
-  )
+    <ChakraProvider theme={theme}>
+      <ApolloProvider client={apolloClient}>
+        <Component {...pageProps} />
+      </ApolloProvider>
+    </ChakraProvider>
+  );
 }
-
-export default MyApp

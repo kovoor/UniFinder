@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+/* @import url('https://rsms.me/inter/inter.css');
 html { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: -apple-system, BlinkMacSystemFont, 'Inter var', sans-serif; }
@@ -8,7 +8,8 @@ html,
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Inter, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #fafafa;
 }
 
 a {
@@ -19,4 +20,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */

@@ -1,18 +1,21 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
-const connection = {}
+const connection = {};
 
 async function dbConnect() {
-  const db = await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-  })
-    .then(console.log('Connection established'))
-    .catch((e) => {
-      console.log(e)
-      process.exit(1)
+  await mongoose
+    .connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
     })
+    .then(
+      // console.log("Connection established")
+    )
+    .catch((e) => {
+      console.log(e);
+      process.exit(1);
+    });
 }
 
-export default dbConnect
+export default dbConnect;

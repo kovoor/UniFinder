@@ -3,6 +3,7 @@ require('dotenv').config()
 module.exports = {
   env: {
     MONGODB_URI: process.env.MONGODB_URI,
+    GHOST_CONTENT_URI: process.env.GHOST_CONTENT_URI,
     // CLOUDINARY_URL: process.env.CLOUDINARY_URL,
     // DB_NAME: process.env.DB_NAME,
     // WEB_URI: process.env.WEB_URI,
